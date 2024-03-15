@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Wishes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Hide horizontal scrollbar caused by animation */
+            background-image: url('./couple.jpeg'); /* Replace 'background.jpg' with the path to your background image */
+            background-size: contain;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            position: relative;
+        }
+
+        
+
+        .container {
+            backdrop-filter: blur(2px);
+            max-width: 600px;
+            background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.2) inset; /* Glassmorphic effect */
+            position: relative;
+            z-index: 1; /* Ensure it's above the neon lights */
+        }
+
+        h1 {
+            color: #ff7f50; /* Coral color */
+        }
+
+        p {
+            color: #000000;
+            line-height: 1.6;
+            font-weight: 600;
+        }
+
+        .signature {
+            font-style: italic;
+            color: #4682b4; /* Steel blue color */
+        }
+
+        .neon-emoji {
+            position: absolute;
+            font-size: 90px;
+            width: 200px;
+            height: 200px;
+            animation: floatAnimation 4s ease-in-out infinite alternate;
+        }
+
+        @keyframes floatAnimation {
+            0% {
+                transform: translate(10px, 10px);
+            }
+            100% {
+                transform: translate(-15px, -15px);
+            }
+        }
+
+        audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: #fb85ff;
+     color: #ffffff;
+     }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Warm Wishes</h1>
+        <p>Dear </p>
+        <p>On this special day, I wanted to take a moment to express how much you mean to me. You bring so much joy, love, and light into my life, and I am incredibly grateful to have you by my side.</p>
+        <p>May this day be filled with laughter, happiness, and unforgettable memories. Here's to many more wonderful moments together!</p>
+        <p>ଜନ୍ମ ଦିନର ହାର୍ଧିକ ଅଭିନନ୍ଦନ । ସବୁବେଳେ ଖୁସିରେ ରହ</p>
+        <p class="signature">. .... ...</p>
+        <audio controls  src="newaudio.mp3" autoplay style="color: #ff7f50;"></audio>
+    </div>
+    <div class="neon-emoji" style="bottom: 10px; right: 500px;">💖</div>
+    <div class="neon-emoji" style="bottom: 560px; left: 500px;">😊</div>
+    <div class="neon-emoji" style="top: 100px; right: 200px;">🎉</div>
+    <div class="neon-emoji" style="top: 150px; left: 100px;">🌟</div>
+    <div class="neon-emoji" style="top: 200px; right: 500px;">🎈</div>
+    <div class="neon-emoji" style="bottom: 20px; left: 200px;">🎁</div>
+    <div class="neon-emoji" style="bottom: 150px; right: 100px;">🥳</div>
+    
+</body>
+</html>
